@@ -1,0 +1,54 @@
+:root {
+  --darker-blue: rgb(25, 20, 101, 1);
+  --darker-blue-transpaent: rgb(25, 20, 101, 0.7);
+  --dark-blue: rgba(33, 26, 144, 1);
+  --blue: rgba(44, 21, 208, 1);
+  --light-blue: rgb(190, 182, 249);
+  --purple: rgba(124, 51, 185, 1);
+  --white: rgb(255, 255, 255);
+  --transparent: rgba(0, 0, 0, 0);
+  --light-gray: rgb(226, 226, 226);
+  --darker-blue-even-transpaent: rgb(25, 20, 101, 0.2);
+}
+
+html {
+  /* This is needed so that the targets of the navbar links aren't covered by the navbar  */
+  scroll-padding-top: 50px;
+}
+
+.section-below-navbar {
+  /* This is needed for the top of the page where the scroll-padding-top doesn't exist */
+  padding-top: 50px;
+}
+
+.img {
+  /* keep the image a visible size but not too big and allow text next to it if space allows */
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+}
+
+.dark-background-container {
+  /* Taken from HW4 example and change colors according to presonal preference */
+  background: var(--dark-blue);
+  background: linear-gradient(
+    34deg,
+    var(--dark-blue) 6%,
+    var(--blue) 46%,
+    var(--purple) 91%
+  );
+  color: var(--white);
+}
+
+.content-container {
+  padding: 20px;
+  max-width: 1024px;
+  margin: auto;
+  display: inline-block;
+}
+
+.side-text {
+  display: inline-block;
+  width: 75%;
+  /* height: 200px; */
+}
