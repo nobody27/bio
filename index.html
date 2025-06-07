@@ -75,7 +75,7 @@
             height="200px"
             alt="Profile picture of Leior Varon"
           />
-          <p class="side-text px-5 text-start align-middle">
+          <p class="side-text text-start align-middle">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
             dignissimos deserunt saepe eos quisquam facere provident facilis,
             harum officiis. Dolore necessitatibus et deserunt perferendis?
@@ -100,13 +100,10 @@
         <h2>Contact Me</h2>
         <form
           method="post"
-          action="/something"
+          action="/index"
           class="border w-50 mx-auto mt-4 p-3"
         >
-          <h1 class="text-center my-3 mb-4">Sign Up Form</h1>
-          <h2 class="text-center my-3 mb-4">
-            Fill out the items in the form below
-          </h2>
+          <h1 class="text-center my-3 mb-4">Contact Form</h1>
           <div class="mb-3">
             <label for="fname" class="form-label">Name</label>
             <input
@@ -114,66 +111,72 @@
               class="form-control"
               id="fname"
               name="fullname"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="uname" class="form-label">Username</label>
-            <input
-              type="text"
-              class="form-control"
-              id="uname"
-              name="username"
+              required
             />
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email </label>
-            <input type="email" class="form-control" id="email" name="email" />
-          </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Password </label>
             <input
-              type="password"
+              type="email"
               class="form-control"
-              id="password"
-              name="password"
+              id="email"
+              name="email"
+              required
             />
           </div>
           <div class="mb-3">
-            <label for="date" class="form-label">Date </label>
-            <input type="date" class="form-control" id="date" name="date" />
+            <label for="subject" class="form-label">Subject </label>
+            <input
+              type="text"
+              class="form-control"
+              id="subject"
+              name="subject"
+              required
+            />
           </div>
-
-          <fieldset class="form-group mb-3 content-container">
-            <legend class="form-label fs-6 mx-auto">Preferred Pronouns</legend>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              rows="4"
+              class="form-control"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+          </div>
+          <fieldset class="form-group mb-3 content-container d-block">
+            <legend class="form-label fs-6 mx-auto">
+              How did you find this page?
+            </legend>
             <div>
               <input
                 type="radio"
                 class="form-check-input"
-                id="sheHer"
+                id="linkedin"
                 name="section"
-                value="She/her"
+                value="LinkedIn"
               />
-              <label for="sheHer" class="">She/her</label>
+              <label for="linkedin" class="">LinkedIn</label>
             </div>
             <div>
               <input
                 type="radio"
                 class="form-check-input"
-                id="heHim"
+                id="internet"
                 name="section"
-                value="He/him"
+                value="internet"
               />
-              <label for="heHim" class="">He/him</label>
+              <label for="internet" class="">Internet Search</label>
             </div>
             <div>
               <input
                 type="radio"
                 class="form-check-input"
-                id="theyThem"
+                id="word_of_mouth"
                 name="section"
-                value="They/them"
+                value="word of mouth"
               />
-              <label for="theyThem" class="">They/them</label>
+              <label for="word_of_mouth" class="">Word of Mouth</label>
             </div>
             <div>
               <input
