@@ -9,7 +9,23 @@
   --transparent: rgba(0, 0, 0, 0);
   --light-gray: rgb(226, 226, 226);
   --darker-blue-even-transpaent: rgb(25, 20, 101, 0.2);
+
+  --gray1: #333333;
+  --gray2: #555555;
+  --gray3: #cccccc;
+  --gray4: #aaaaaa;
+
+  --black: #080808;
+  --teal: #006060;
+  --lightteal: #008080;
+  --navy: #000080;
+  --cyan: #17a2b8;
+  --violetred: #c71585;
+  --red: #ff0000;
+  --orange: #ffa500;
+  --green: #006400;
 }
+
 
 html {
   /* This is needed so that the targets of the navbar links aren't covered by the navbar  */
@@ -40,6 +56,12 @@ html {
   color: var(--white);
 }
 
+.light-background-container {
+  /* Taken from HW4 example and change colors according to presonal preference */
+  background: var(--cyan);
+  color: var(--black);
+}
+
 .content-container {
   padding: 20px;
   max-width: 1024px;
@@ -50,4 +72,23 @@ html {
 .side-text {
   display: inline-block;
   width: 75%;
+}
+
+/* .cards {
+  align-items: flex-start;
+  margin: 10px;
+} */
+
+/* .cards < .card {
+  width: 400px;
+  min-width: 300px;
+  border: 1cap;
+  display: inline-block;
+  margin: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+} */
+
+.card-title {
+  text-align: center;
 }
