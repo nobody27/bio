@@ -26,7 +26,6 @@
   --green: #006400;
 }
 
-
 html {
   /* This is needed so that the targets of the navbar links aren't covered by the navbar  */
   scroll-padding-top: 50px;
@@ -37,11 +36,8 @@ html {
   padding-top: 50px;
 }
 
-.img {
-  /* keep the image a visible size but not too big and allow text next to it if space allows */
-  display: inline-block;
-  width: 200px;
-  height: 200px;
+.logo {
+  background-color: white;
 }
 
 .dark-background-container {
