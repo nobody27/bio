@@ -40,6 +40,10 @@ html {
   background-color: white;
 }
 
+.large-first-word {
+  font-size: x-large;
+}
+
 .dark-background-container {
   /* Taken from HW4 example and change colors according to presonal preference */
   background: var(--dark-blue);
