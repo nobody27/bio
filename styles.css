@@ -19,7 +19,7 @@
   --teal: #006060;
   --lightteal: #008080;
   --navy: #000080;
-  --cyan: #17a2b8;
+  --cyan: #9ee0eb;
   --violetred: #c71585;
   --red: #ff0000;
   --orange: #ffa500;
@@ -37,14 +37,27 @@ html {
 }
 
 .logo {
+  display: flex;
   background-color: white;
+}
+
+.centered-container {
+  text-align: center;
+}
+
+.centered-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .large-first-word {
   font-size: x-large;
 }
 
-.dark-background-container {
+.alternating-background-container:nth-child(2n + 1) {
   /* Taken from HW4 example and change colors according to presonal preference */
   background: var(--dark-blue);
   background: linear-gradient(
@@ -56,7 +69,7 @@ html {
   color: var(--white);
 }
 
-.light-background-container {
+.alternating-background-container:nth-child(2n) {
   /* Taken from HW4 example and change colors according to presonal preference */
   background: var(--cyan);
   color: var(--black);
@@ -74,20 +87,14 @@ html {
   width: 75%;
 }
 
-/* .cards {
-  align-items: flex-start;
-  margin: 10px;
-} */
-
-/* .cards < .card {
-  width: 400px;
-  min-width: 300px;
-  border: 1cap;
-  display: inline-block;
+.side-content {
   margin: 20px;
-  align-items: flex-start;
-  justify-content: flex-start;
-} */
+}
+
+.card-body {
+  background-color: var(--white);
+  color: var(--black);
+}
 
 .card-title {
   text-align: center;
