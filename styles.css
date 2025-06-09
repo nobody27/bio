@@ -83,6 +83,7 @@ doesn't exist to just include the H1 title, which isn't really needed here*/
   );
   color: var(--white);
   border-color: var(--white);
+  padding: 20px;
 }
 
 .alternating-background-container:nth-child(2n) {
@@ -90,6 +91,7 @@ doesn't exist to just include the H1 title, which isn't really needed here*/
   background: var(--cyan);
   color: var(--black);
   border-color: var(--black);
+  padding: 20px;
 }
 
 .content-container {
@@ -117,7 +119,7 @@ doesn't exist to just include the H1 title, which isn't really needed here*/
   text-align: center;
 }
 
-.form {
+.contact-form {
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
