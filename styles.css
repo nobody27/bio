@@ -60,11 +60,12 @@ doesn't exist to just include the H1 title, which isn't really needed here*/
 }
 
 .centered-section {
-  text-align: center;
+  text-align: start;
   max-width: 800px;
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 75%;
 }
 
 .large-first-word {
