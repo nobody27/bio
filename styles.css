@@ -28,17 +28,31 @@
 
 html {
   /* This is needed so that the targets of the navbar links aren't covered by the navbar  */
-  scroll-padding-top: 50px;
+  scroll-padding-top: 56px;
 }
 
-.section-below-navbar {
-  /* This is needed for the top of the page where the scroll-padding-top doesn't exist */
-  padding-top: 50px;
-}
+/* This is not needed. I set the top of the page where the scroll-padding-top 
+doesn't exist to just include the H1 title, which isn't really needed here*/
+/* .section-below-navbar {
+  padding-top: 55px;
+} */
 
 .logo {
   display: flex;
   background-color: white;
+  border-radius: 10px;
+  width: 150px;
+  height: auto;
+  margin: 20px;
+}
+
+.round-logo {
+  display: flex;
+  background-color: white;
+  border-radius: 75px;
+  width: 150px;
+  height: auto;
+  margin: 20px;
 }
 
 .centered-container {
@@ -67,12 +81,14 @@ html {
     var(--purple) 91%
   );
   color: var(--white);
+  border-color: var(--white);
 }
 
 .alternating-background-container:nth-child(2n) {
   /* Taken from HW4 example and change colors according to presonal preference */
   background: var(--cyan);
   color: var(--black);
+  border-color: var(--black);
 }
 
 .content-container {
@@ -98,4 +114,11 @@ html {
 
 .card-title {
   text-align: center;
+}
+
+.form {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  width: 50%;
 }
