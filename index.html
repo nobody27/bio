@@ -51,6 +51,9 @@
                 <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#xkcd">xkcd</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#form">Contact Me</a>
               </li>
             </ul>
@@ -93,13 +96,17 @@
             <p>
               Unfortunately, I can't share a lot of my previous work because of
               confidentiality, however I do have a couple of simple and fun
-              school <a href="#projects">projects</a> below, in addition to
-              sharing what I can in my <a href="#experience">experience</a> and
-              <a href="#education">education</a> sections. If you are the kind
-              of person to look into the devtools of this page, please know that
-              this page was done as a school project for a course outside of my
-              expertise that I am trying out for fun and it does not reflect my
-              usual level of expertise or quality
+              school
+              <a href="#projects" class="large-link-text">projects</a> below, in
+              addition to sharing what I can in my
+              <a href="#previous work" class="large-link-text">experience</a>
+              and
+              <a href="#education" class="large-link-text">education</a>
+              sections. If you are the kind of person to look into the devtools
+              of this page, please know that this page was done as a school
+              project for a course outside of my expertise that I am trying out
+              for fun and it does not reflect my usual level of expertise or
+              quality
               <span>&#x1F601;</span>
             </p>
             <b
@@ -480,12 +487,131 @@
           </div>
         </section>
       </section>
+
+      <section
+        id="xkcd"
+        class="alternating-background-container"
+        role="contentinfo"
+      >
+        <h2>XKCD</h2>
+        <section class="container overflow-hidden p-4">
+          <p>
+            And now, because it is in the guidelines of this project, and also
+            fun, please click on the accordion below to view some choice XKCD
+            cartoons
+          </p>
+          <p>
+            Please visit the original website of these great cartoons at
+            <a href="https://xkcd.com" class="large-link-text">xkcd.com</a>
+          </p>
+          <div
+            class="accordion accordion-flush 1875rem centered-container"
+            id="accordionExample"
+          >
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  id="xkcd-accordion-button"
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  XKCD Cartoon #1685
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <img
+                    src="https://imgs.xkcd.com/comics/patch.png"
+                    alt="Cartoon making fun of code patches"
+                    title="My optimizer uses content-aware inpainting to fill 
+                    in all the wasted whitespace in the code, repeating the 
+                    process until it compiles."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  XKCD Cartoon #2797
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <img
+                    src="https://imgs.xkcd.com/comics/actual_progress.png"
+                    alt="cartoon with stick people making fun of the difficulty 
+                    of predicting research progress"
+                    title="Slowly progressing from 'how do protons behave in 
+                    relativistic collisions?' to 'what the heck are protons 
+                    even doing when they're just sitting there?'"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  XKCD Cartoon #2030
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <img
+                    src="https://imgs.xkcd.com/comics/voting_software.png"
+                    alt="cartoon making light of how unsafe voting machines are"
+                    title="There are lots of very smart people doing fascinating
+                     work on cryptographic voting protocols. We should be funding
+                      and encouraging them, and doing all our elections with 
+                      paper ballots until everyone currently working in that 
+                      field has retired."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
       <section id="form" class="alternating-background-container" role="form">
         <h2>Contact Me</h2>
         <section>
           <form
             method="post"
-            action="/index"
+            action="mailto:leior@pdx.edu?subject=contact_me_form"
             class="contact-form w-50 mx-auto mt-4 p-3"
           >
             <h1 class="text-center my-3 mb-4">Contact Form</h1>
@@ -579,6 +705,7 @@
 
             <button
               type="submit"
+              value="Send"
               class="btn btn-primary d-inline-block"
               ,
               style="width: 49%"
@@ -587,6 +714,7 @@
             </button>
             <button
               type="reset"
+              value="Reset"
               class="btn btn-secondary d-inline-block"
               ,
               style="width: 49%"

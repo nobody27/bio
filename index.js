@@ -1,8 +1,9 @@
+// form section
 const submitForm = function submitFormUserInput() {
   const form = document.querySelector("form");
 
   form.addEventListener("submit", function handleSubmit(event) {
-    event.preventDefault();
+    // event.preventDefault();
 
     console.log("Name: " + form.elements.fname.value);
     console.log("Email: " + form.elements.email.value);
@@ -12,4 +13,5 @@ const submitForm = function submitFormUserInput() {
   });
 };
 
+// submit
 submitForm();

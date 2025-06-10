@@ -68,7 +68,8 @@ doesn't exist to just include the H1 title, which isn't really needed here*/
   width: 75%;
 }
 
-.large-first-word {
+.large-first-word,
+.large-link-text {
   font-size: x-large;
 }
 
