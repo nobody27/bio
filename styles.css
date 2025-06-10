@@ -31,12 +31,6 @@ html {
   scroll-padding-top: 56px;
 }
 
-/* This is not needed. I set the top of the page where the scroll-padding-top 
-doesn't exist to just include the H1 title, which isn't really needed here*/
-/* .section-below-navbar {
-  padding-top: 55px;
-} */
-
 .logo {
   display: flex;
   background-color: white;
@@ -100,11 +94,6 @@ doesn't exist to just include the H1 title, which isn't really needed here*/
   max-width: 1024px;
   margin: auto;
   display: inline-block;
-}
-
-.side-text {
-  display: inline-block;
-  width: 75%;
 }
 
 .side-content {
