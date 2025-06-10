@@ -49,3 +49,11 @@ I was able to get the form to open the default mail app and set my email address
 ### Bootstrap accordion
 
 The accordion was relatively simple to use. I had hoped to use the XKCD API to display a random cartoon each time the user opens the accordion, however I got bogged down by CORS errors, and different web tutorials didn't end up helping, so I just used embedded images.
+
+## Testing
+
+This site was tested with chrome and firefox, on narrow and wide windows.
+
+## Accessability
+
+This website passed WAVE tests, except for one area (projects), where I decided to jump levels of headers to keep a nicer look and feel.
